@@ -71,5 +71,13 @@
 		<string>SimpleLineIcons.ttf</string>
 		<string>Zocial.ttf</string>
 	</array>
+  <key>NSPhotoLibraryUsageDescription</key>
+  <string>DemoApp would like access to your photo gallery</string>
+  <key>NSCameraUsageDescription</key>
+  <string>DemoApp would like to use your camera</string>
+  <key>NSPhotoLibraryAddUsageDescription</key>
+  <string>DemoApp would like to save photos to your photo gallery</string>
+  <key>NSMicrophoneUsageDescription</key>
+  <string>DemoApp would like to your microphone (for videos)</string>
 </dict>
 </plist>

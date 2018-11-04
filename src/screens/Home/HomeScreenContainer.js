@@ -5,13 +5,16 @@ import {
   hoistStatics,
   renderComponent,
   lifecycle,
+  withState,
 } from 'recompose';
 import R from 'ramda';
 import HomeScreenView from './HomeScreenView';
 import { RootSpinner } from '../../components';
-import { NavigationService } from '../../services';
 
 const enhance = compose(
+
+  withState('avatar', 'setAvatar', ''),
+
   withHandlers({
     onCancel: props => () => {
 
@@ -19,10 +22,6 @@ const enhance = compose(
     onSubmit: props => () => {
 
     },
-    onLogOut: () => () => {
-      NavigationService.navigateToAuth();
-    },
-
   }),
 
   lifecycle({

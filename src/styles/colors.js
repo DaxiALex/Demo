@@ -7,6 +7,7 @@ export default {
   secondary: '#A2A2A2',
 
   secondaryLighter: '#F3F1F1',
+  secondaryOpacity: 'rgba(162,162,162, 0.7)',
 
 
   green: '#16c52f',

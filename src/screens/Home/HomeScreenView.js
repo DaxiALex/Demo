@@ -3,25 +3,29 @@ import T from 'prop-types';
 // import { View } from 'react-native';
 import {
   Button,
-  Text,
   Container,
   NavigationButton,
 } from '../../components';
-import { colors, headerStyle } from '../../styles';
+import { headerStyle } from '../../styles';
 import { getParamOr } from '../../utils/navHelper';
+import { ImagePicker } from './components';
 
 
 const Home = ({
-  onLogOut,
+  onSubmit,
+  avatar,
+  setAvatar,
 }) => (
-  <Container>
-    <Text>Home Page</Text>
+  <Container withoutPadding>
+    <ImagePicker avatar={avatar} setAvatar={setAvatar} />
 
+    <Container>
 
-    <Button
-      title="Log out"
-      onPress={onLogOut}
-    />
+      <Button
+        title="Post"
+        onPress={onSubmit}
+      />
+    </Container>
   </Container>
 );
 
@@ -29,20 +33,22 @@ Home.navigationOptions = ({ navigation }) => ({
   ...headerStyle,
   title: 'New place',
   headerLeft:
-    <NavigationButton
-      title={getParamOr(null, 'cancelButtonTitle')(navigation)}
-      onPress={getParamOr(null, 'onCancel')(navigation)}
-    />,
+  <NavigationButton
+    title={getParamOr(null, 'cancelButtonTitle')(navigation)}
+    onPress={getParamOr(null, 'onCancel')(navigation)}
+  />,
   headerRight:
-    <NavigationButton
-      isDisabled={getParamOr(null, 'isSubmitDisabled')(navigation)}
-      title={getParamOr(null, 'submitButtonTitle')(navigation)}
-      onPress={getParamOr(null, 'onSubmit')(navigation)}
-    />,
+  <NavigationButton
+    isDisabled={getParamOr(null, 'isSubmitDisabled')(navigation)}
+    title={getParamOr(null, 'submitButtonTitle')(navigation)}
+    onPress={getParamOr(null, 'onSubmit')(navigation)}
+  />,
 });
 
 Home.propTypes = {
-  onLogOut: T.func,
+  avatar: T.string,
+  setAvatar: T.func,
+  onSubmit: T.func,
 };
 
 export default Home;

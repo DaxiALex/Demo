@@ -11,7 +11,7 @@ export const doubleIndent = moderateScale(indent * 2);
 
 export const verticalIndent = verticalScale(indent);
 
-export const commonHeight = verticalScale(40);
+export const commonHeight = verticalScale(35);
 
 export const borderRadius = 4;
 

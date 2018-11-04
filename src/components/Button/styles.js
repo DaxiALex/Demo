@@ -9,14 +9,14 @@ const styles = StyleSheet.create({
     height: dimensions.commonHeight,
     width: '100%',
     // borderRadius: dimensions.commonHeight / 2,
-    borderRadius: 10,
+    borderRadius: 5,
   },
   containerPressed: {
     backgroundColor: colors.buttonPressed,
   },
   title: {
     color: colors.white,
-    fontSize: fontSizes.medium,
+    fontSize: fontSizes.xmedium,
   },
   titlePressed: {
     color: colors.white,

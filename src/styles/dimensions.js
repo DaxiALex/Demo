@@ -1,6 +1,7 @@
 import { Platform, Dimensions } from 'react-native';
 // import Expo from 'expo';
 import { moderateScale, verticalScale } from '../utils/scalingUtils';
+import fontSizes from './fontSizes';
 
 
 export const { width, height } = Dimensions.get('window');
@@ -16,6 +17,9 @@ export const commonHeight = verticalScale(35);
 export const borderRadius = 4;
 
 export const iconSize = moderateScale(25);
+
+export const labelHeight = fontSizes.small + halfIndent; // label height + padding
+
 
 // export const statusBar = Expo.Constants.statusBarHeight;
 

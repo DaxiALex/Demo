@@ -3,7 +3,7 @@ import T from 'prop-types';
 import { View } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {
-  // Button,
+  // Select,
   Text,
   Container,
   Button,
@@ -19,16 +19,16 @@ const Login = ({
 
     <View style={s.mainContainer}>
       <Icon name="rocket" size={150} color={colors.primary} style={s.icon} />
-      <Text style={s.title}>Boilerplate login</Text>
+      <Text style={s.title}>Demo</Text>
 
-      <Text>Welcome to boilerplate by Alex</Text>
+      <Text>Welcome to boilerplate by Alex Yuriev</Text>
 
 
     </View>
 
 
     <Button
-      title="Start"
+      title="Create new place"
       onPress={onSignIn}
     />
 

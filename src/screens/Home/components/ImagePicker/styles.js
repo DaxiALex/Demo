@@ -1,9 +1,16 @@
 import { StyleSheet } from 'react-native';
-import { colors, dimensions, fontSizes, fontWeights } from '../../../../styles';
+import {
+  colors,
+  dimensions,
+  fontSizes,
+  fontWeights,
+} from '../../../../styles';
 
+// TODO change height if need
 const styles = StyleSheet.create({
   contentContainer: {
     height: 280,
+    // height: dimensions.height * 0.4,
     width: '100%',
     backgroundColor: colors.secondaryLighter,
     alignItems: 'center',
@@ -13,6 +20,8 @@ const styles = StyleSheet.create({
   buttonContainer: {
     height: 140,
     width: 180,
+    // height: dimensions.height * 0.2,
+    // width: dimensions.width * 0.4,
     borderWidth: 3,
     borderColor: colors.secondary,
     borderRadius: 15,
@@ -55,7 +64,7 @@ const styles = StyleSheet.create({
 
   chooseAnotherPhotoTitle: {
     color: colors.white,
-    marginLeft: dimensions.halfIndent
+    marginLeft: dimensions.halfIndent,
   },
 
 

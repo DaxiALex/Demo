@@ -2,10 +2,11 @@ export default {
 
   primary: '#419C00',
   background: '#FFFFFF',
-  text: '#959494',
+  text: '#5f5e5e',
 
-  secondary: '#A2A2A2',
+  secondary: '#b2b2b2',
 
+  secondaryLight: '#D1D1D2',
   secondaryLighter: '#F3F1F1',
   secondaryOpacity: 'rgba(162,162,162, 0.7)',
 

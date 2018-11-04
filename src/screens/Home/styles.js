@@ -1,11 +1,10 @@
 import { StyleSheet } from 'react-native';
-// import { dimensions, fontSizes, colors } from '../../styles';
-// import { verticalScale } from '../../utils/scalingUtils';
+import { colors } from '../../styles';
 
 
 const styles = StyleSheet.create({
   contentContainer: {
-    flex: 1,
+    backgroundColor: colors.white,
   },
 });
 

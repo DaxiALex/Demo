@@ -9,6 +9,10 @@ import TouchableItem from './TouchableItem/TouchableItem';
 import OfflineModal from './OfflineModal/OfflineModal';
 import Button from './Button/Button';
 import NavigationButton from './NavigationButton/NavigationButton';
+import ButtonsSelector from './ButtonsSelector/ButtonsSelector';
+import SegmentedControls from './SegmentedControls/SegmentedControls';
+import Select from './Select/Select';
+import Input from './Input/Input';
 
 export {
   Text,
@@ -22,4 +26,8 @@ export {
   OfflineModal,
   Button,
   NavigationButton,
+  ButtonsSelector,
+  SegmentedControls,
+  Select,
+  Input,
 };

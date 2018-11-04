@@ -8,7 +8,7 @@ const Separator = ({
   marginTop,
   marginBottom,
   style,
-  height,
+  big,
 }) => (
   <View
     style={[
@@ -16,7 +16,7 @@ const Separator = ({
       marginVertical && { marginVertical },
       marginTop && { marginTop },
       marginBottom && { marginBottom },
-      height && s.height,
+      big && s.big,
       style,
     ]}
   />
@@ -25,7 +25,7 @@ Separator.propTypes = {
   marginVertical: T.number,
   marginTop: T.number,
   marginBottom: T.number,
-  height: T.bool,
+  big: T.bool,
   style: ViewPropTypes.style,
 };
 

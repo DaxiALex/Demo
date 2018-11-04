@@ -1,13 +1,13 @@
 import { StyleSheet } from 'react-native';
-import { colors, dimensions } from '../../styles';
+import { colors } from '../../styles';
 
 const styles = StyleSheet.create({
   root: {
     height: 0.5,
-    backgroundColor: colors.background,
+    backgroundColor: colors.secondary,
   },
-  height: {
-    height: dimensions.indent,
+  big: {
+    height: 1,
   },
 });
 

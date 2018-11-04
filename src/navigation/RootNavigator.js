@@ -24,7 +24,7 @@ const RootNavigator = createStackNavigator(
     },
   },
   {
-    initialRouteName: screens.Home,
+    initialRouteName: screens.Login,
     transitionConfig: () => ({
       transitionSpec: {
         duration: 0,

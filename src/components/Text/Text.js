@@ -1,6 +1,6 @@
 import { Text } from 'react-native';
 import { compose, setPropTypes, withProps } from 'recompose';
-import { colors, fontWeights } from '../../styles';
+import { colors } from '../../styles';
 
 // const getFontFamily = (light, medium, bold) => {
 //   let fontFamily = 'Rubik-Bold';
@@ -20,7 +20,7 @@ const enhance = compose(
       // getFontFamily(props.light, props.bold),
       {
         color: colors.text,
-        fontWeight: fontWeights.medium,
+        // fontWeight: fontWeights.medium,
       },
       props.style,
     ],

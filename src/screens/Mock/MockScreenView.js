@@ -2,7 +2,7 @@ import React from 'react';
 import T from 'prop-types';
 // import { View } from 'react-native';
 import {
-  // Button,
+  // Select,
   Text,
   Container,
 } from '../../components';

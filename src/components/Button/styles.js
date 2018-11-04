@@ -1,5 +1,10 @@
 import { StyleSheet } from 'react-native';
-import { colors, dimensions, fontSizes } from '../../styles';
+import {
+  colors,
+  dimensions,
+  fontSizes,
+  fontWeights,
+} from '../../styles';
 
 const styles = StyleSheet.create({
   container: {
@@ -9,7 +14,7 @@ const styles = StyleSheet.create({
     height: dimensions.commonHeight,
     width: '100%',
     // borderRadius: dimensions.commonHeight / 2,
-    borderRadius: 5,
+    borderRadius: dimensions.borderRadius,
   },
   containerPressed: {
     backgroundColor: colors.buttonPressed,
@@ -17,15 +22,16 @@ const styles = StyleSheet.create({
   title: {
     color: colors.white,
     fontSize: fontSizes.xmedium,
+    fontWeight: fontWeights.semiBold,
   },
   titlePressed: {
     color: colors.white,
   },
   titleDisabled: {
-    color: colors.primary,
+    color: colors.white,
   },
   disabled: {
-    backgroundColor: colors.secondaryDisabled,
+    backgroundColor: colors.secondary,
   },
   rowAligned: {
     flexDirection: 'row',

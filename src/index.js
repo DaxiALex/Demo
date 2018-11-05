@@ -13,7 +13,7 @@ import { OfflineModal } from './components';
 const App = () => (
   <Fragment>
     <OfflineModal />
-    <StatusBar translucent backgroundColor={colors.primary} barStyle="dark-content" />
+    <StatusBar backgroundColor={colors.secondaryLighter} barStyle="dark-content" />
     <RootNavigator />
     {/* <RootModal /> */}
   </Fragment>

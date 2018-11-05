@@ -9,6 +9,8 @@ import {
 
 const noop = () => {};
 
+
+// TODO Change on native feedback
 const Button = ({
   onPress = noop,
   onLongPress = noop,
@@ -20,10 +22,10 @@ const Button = ({
   borderless = false,
   ...props
 }) => {
-  if (Platform.Version < 21) {
+  if (Platform.Version >= 21) {
     return (
       <TouchableOpacity
-        onLongPress={onLongPress}
+        onLongPress={onPress}
         onLayout={onLayout}
         onPress={onPress}
         style={style}

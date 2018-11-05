@@ -22,7 +22,7 @@ const ImagePicker = ({
       ? (
         <View style={s.fillAll}>
           <Image
-            source={{ url: avatar }}
+            source={{ uri: avatar }}
             style={s.fillAll}
             resizeMode="cover"
             onLoad={() => setShowLoader(false)}
